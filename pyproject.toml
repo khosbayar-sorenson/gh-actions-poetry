@@ -1,14 +1,13 @@
 [tool.poetry]
-name = "example_app"
-version = "1.0.0"
+name = "example-app"
+version = "0.1.0"
 description = ""
 authors = ["Khosbayar Sandag <ksandag@sorenson.com>"]
 readme = "README.md"
-packages = [{include = "example_app"}]
-
 homepage = "https://github.com/khosbayar-sorenson/gh-actions-poetry"
 repository = "https://github.com/khosbayar-sorenson/gh-actions-poetry"
 license = "MIT"
+packages = [{include = "example_app"}]
 
 [tool.poetry.dependencies]
 python = "^3.9"
@@ -16,6 +15,8 @@ httpx = "^0.23.3"
 fastapi = "^0.95.0"
 uvicorn = {extras = ["standard"], version = "^0.21.1"}
 
+[tool.isort]
+profile = "black"
 
 [tool.poetry.group.dev.dependencies]
 autopep8 = "^2.0.2"
@@ -26,9 +27,6 @@ isort = "^5.12.0"
 black = "^23.3.0"
 flake8 = "^6.0.0"
 mypy = "^1.2.0"
-
-[tool.isort]
-profile = "black"
 
 [tool.mypy]
 # 3rd party import
