@@ -1,5 +1,5 @@
 ---
-name: Linting
+name: Testing
 
 on:
   pull_request:
@@ -10,7 +10,7 @@ on:
       - main
 
 jobs:
-  Linting:
+  Testing:
     runs-on: ubuntu-latest
     steps:
       # check-out repo
@@ -29,9 +29,18 @@ jobs:
           cache: "poetry"
       # install requirements (including dev dependencies)
       - name: Install requirements
-        run: poetry install --with lint
-      # run linters
-      - name: Run linters
+        run: poetry install --with test
+      # run unit tests
+      - name: Run unit-tests
         run: |
           set -o pipefail
-          poetry run make lint
+          poetry run make unit-tests-cov-fail
+      # add pytest coverage report to PR
+      - name: Pytest coverage comment
+        if: ${{ success() && github.event_name == 'pull_request' }}
+        id: coverageComment
+        uses: MishaKav/pytest-coverage-comment@main
+        with:
+          title: Coverage Report
+          pytest-coverage-path: pytest-coverage.txt
+          junitxml-path: pytest.xml
