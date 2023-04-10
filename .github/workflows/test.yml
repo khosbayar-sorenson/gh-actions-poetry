@@ -43,4 +43,4 @@ jobs:
         with:
           title: Coverage Report
           pytest-coverage-path: pytest-coverage.txt
-          pytest-xml-coverage-path: pytest.xml
+          junitxml-path: pytest.xml
