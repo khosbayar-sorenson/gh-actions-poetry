@@ -38,6 +38,11 @@ pytest-asyncio = "^0.21.0"
 trio = "^0.22.0"
 pytest-cov = "^4.0.0"
 
+
+[tool.poetry.group.docs.dependencies]
+mkdocs = "^1.4.2"
+mkdocs-material = "^9.1.6"
+
 [tool.mypy]
 # 3rd party import
 ignore_missing_imports = true
