@@ -2,12 +2,8 @@ This site contains the project documentation for the `Python Project Poetry`
 
 ## Table of Contents
 
-The documentation follows the best practice for
-project documentation as described by Daniele Procida
-in the [Diátaxis documentation framework](https://diataxis.fr/)
-and consists of four separate parts:
+This part of the project documentation focuses on an information-oriented approach. Use it as a reference for the technical implementation of the project code.
 
-1. [Tutorials](tutorials.md)
-2. [How-To Guides](how-to-guides.md)
-3. [Reference](reference.md)
-4. [Explanation](explanation.md)
+::: example_app.app options: show_root_heading: true
+
+::: example_app.service options: show_root_heading: true
