@@ -54,3 +54,4 @@ jobs:
           echo '```' >> $GITHUB_STEP_SUMMARY
           cat pytest-coverage.txt >> $GITHUB_STEP_SUMMARY
           echo '```' >> $GITHUB_STEP_SUMMARY
+          echo '${{ steps.coverageComment.outputs.coverageHtml }}' >> $GITHUB_STEP_SUMMARY
