@@ -4,4 +4,4 @@
 
 # gh-actions-poetry
 Testing poetry
-test
+testing semantic verions
