@@ -26,6 +26,23 @@ clean-cov:
 	@rm -rf htmlcov
 	@rm -rf pytest.xml
 	@rm -rf pytest-coverage.txt
+
+##@ Releases
+current-version: ## returns the current version
+	@semantic-release print-version --current
+
+next-version: ## returns the next version
+	@semantic-release print-version --next
+
+current-changelog: ## returns the current changelog
+	@semantic-release changelog --released
+
+next-changelog: ## returns the next changelog
+	@semantic-release changelog --unreleased
+
+publish-noop: ## publish command (no-operation mode)
+	@semantic-release publish --noop
+
 ##@ Documentation
 docs-build: ## build documentation locally
 	@mkdocs build
