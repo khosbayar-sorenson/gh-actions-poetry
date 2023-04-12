@@ -2,6 +2,13 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.0 (2023-04-12)
+### Feature
+* Allow provided config object to extend other configs ([`cf5146d`](https://github.com/khosbayar-sorenson/gh-actions-poetry/commit/cf5146de89e3b00e6709df38ad5485eb1397a478))
+
+### Breaking
+* extending other config files ([`cf5146d`](https://github.com/khosbayar-sorenson/gh-actions-poetry/commit/cf5146de89e3b00e6709df38ad5485eb1397a478))
+
 ## v0.3.0 (2023-04-12)
 ### Feature
 * Get current version ([`f4a20ed`](https://github.com/khosbayar-sorenson/gh-actions-poetry/commit/f4a20ed8f775c6230ee92b341357c1e3df808b3f))
