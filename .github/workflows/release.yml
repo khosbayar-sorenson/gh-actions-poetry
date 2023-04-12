@@ -42,3 +42,4 @@ jobs:
           git config --global user.email "github-actions@github.com"
           # run semantic-release
           poetry run semantic-release publish -v DEBUG -D commit_author="github-actions <action@github.com>"
+          poetry version
