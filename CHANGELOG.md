@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.1.1 (2023-04-18)
+### Fix
+* Test patch ([`ac2dbd9`](https://github.com/khosbayar-sorenson/gh-actions-poetry/commit/ac2dbd989a366c1644fa9ce66b361e6b38dafe15))
+
 ## [1.1.0](https://github.com/khosbayar-sorenson/gh-actions-poetry/compare/v1.0.0...v1.1.0) (2023-04-12)
 
 
