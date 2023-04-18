@@ -2,6 +2,13 @@
 
 <!--next-version-placeholder-->
 
+## v2.0.0 (2023-04-18)
+### Feature
+* Major version ([`0716045`](https://github.com/khosbayar-sorenson/gh-actions-poetry/commit/07160458f7cfb6448770ebb788a19cdcb250c6db))
+
+### Breaking
+* major version ([`0716045`](https://github.com/khosbayar-sorenson/gh-actions-poetry/commit/07160458f7cfb6448770ebb788a19cdcb250c6db))
+
 ## v1.2.0 (2023-04-18)
 ### Feature
 * Testing minor ([`a1992f4`](https://github.com/khosbayar-sorenson/gh-actions-poetry/commit/a1992f4ffded891788297628bc1b4e794da59892))
