@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.2.0 (2023-04-18)
+### Feature
+* Testing minor ([`a1992f4`](https://github.com/khosbayar-sorenson/gh-actions-poetry/commit/a1992f4ffded891788297628bc1b4e794da59892))
+
 ## v1.1.2 (2023-04-18)
 ### Fix
 * Test patch ([`c6be3bf`](https://github.com/khosbayar-sorenson/gh-actions-poetry/commit/c6be3bfbad5cc539e2173e9337bb4ca0e6442caf))
