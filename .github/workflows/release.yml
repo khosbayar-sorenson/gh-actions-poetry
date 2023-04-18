@@ -40,6 +40,5 @@ jobs:
           # Set git details
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
+          # run semantic-release
           poetry run semantic-release publish -v DEBUG -D commit_author="github-actions <action@github.com>"
-          $VERSION=$(semantic-release print-version)
-          echo $VERSION
