@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v2.1.1 (2023-04-20)
+### Fix
+* Test protected branch ([`1f5bca5`](https://github.com/khosbayar-sorenson/gh-actions-poetry/commit/1f5bca5bdf30faf342dcf9780a422dec8a2a8a75))
+
 ## v2.1.0 (2023-04-18)
 ### Feature
 * Testing patch ([`beda01b`](https://github.com/khosbayar-sorenson/gh-actions-poetry/commit/beda01b14e97e4be09db1e1463c2348fe4d070b7))
