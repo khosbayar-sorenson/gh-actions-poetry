@@ -17,7 +17,6 @@ jobs:
           ref: ${{ github.head_ref }}
           token: ${{ secrets.GH_TOKEN }}
           fetch-depth: 0
-          persist-credentials: false
       # install poetry
       - name: Install poetry
         run: pipx install poetry
@@ -33,7 +32,7 @@ jobs:
       # semantic release
       - name: Python Semantic Release
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_FINE_GRAINED_PAT }}
         run: |
           set -o pipefail
           # Set git details
