@@ -19,3 +19,4 @@ fix: A bug fix
 test protected branch
 test fix
 test
+1.1.1
