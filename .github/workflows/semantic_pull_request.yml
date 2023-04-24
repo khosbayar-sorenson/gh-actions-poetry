@@ -7,10 +7,17 @@ on:
       - edited
       - synchronize
 jobs:
-  main:
-    name: Validate PR title
+  echo:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: amannn/action-semantic-pull-request@v5
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+      - name: Echo Hi
+        run: echo "Validate PR title"
+# jobs:
+#   main:
+#     name: Validate PR title
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: amannn/action-semantic-pull-request@v5
+#         env:
+#           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}

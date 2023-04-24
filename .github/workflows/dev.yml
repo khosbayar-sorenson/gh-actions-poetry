@@ -1,0 +1,25 @@
+---
+name: Dev
+
+on:
+  pull_request:
+    types: [closed, opened]
+    branches:
+      - dev
+
+jobs:
+  call-testing-pipeline:
+    if: github.event.pull_request.merged == true
+    name: Testing
+    uses: ./.github/workflows/test.yml
+  call-linting-pipeline:
+    name: Linting
+    needs: call-testing-pipeline
+    uses: ./.github/workflows/lint.yml
+  call-release-pipeline:
+    name: Release
+    needs:
+      - call-testing-pipeline
+      - call-linting-pipeline
+    uses: ./.github/workflows/release.yml
+    secrets: inherit

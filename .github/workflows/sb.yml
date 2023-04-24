@@ -1,0 +1,17 @@
+---
+name: Sandbox
+
+on:
+  push:
+    branches:
+      # - main
+      - "feat/*"
+      - "fix/*"
+
+jobs:
+  call-testing-pipeline:
+    name: Testing
+    uses: ./.github/workflows/test.yml
+  call-linting-pipeline:
+    name: Linting
+    uses: ./.github/workflows/lint.yml
