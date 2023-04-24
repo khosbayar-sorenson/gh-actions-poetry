@@ -32,9 +32,11 @@ jobs:
     steps:
       # Check out the code
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
-          ref: ${{ github.event.pull_request.head.ref }}
+          ref: ${{ github.head_ref }}
+          token: ${{ secrets.GH_TOKEN }}
+          fetch-depth: 0
       # Install dependencies and run semantic-release
       - name: Publish new version
         env:
